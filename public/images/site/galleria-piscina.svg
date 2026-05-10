@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Piscina</title>
+  <desc id="desc">Immagine campione locale modificabile in public/images/site/galleria-piscina.svg</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a4971"/><stop offset="1" stop-color="#2fb5c3"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="656" cy="120" r="108" fill="#ffffff" opacity=".28"/>
+  <path d="M0 432 C 160 372, 256 491, 400 420 S 640 348, 800 408 L 800 600 L 0 600 Z" fill="#ffffff" opacity=".35"/>
+  <path d="M0 491 C 200 456, 344 552, 520 486 S 704 444, 800 498 L 800 600 L 0 600 Z" fill="#fff" opacity=".22"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="108" width="448" height="192" rx="28" fill="#ffffff" opacity=".86"/>
+    <text x="96" y="192" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#1a4971">Piscina</text>
+    <text x="96" y="252" font-family="Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2" fill="#1f5c4b" opacity=".86">GALLERIA CAMPIONE</text>
+  </g>
+  <text x="764" y="572" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#fff" opacity=".72">Sostituisci questa immagine</text>
+</svg>

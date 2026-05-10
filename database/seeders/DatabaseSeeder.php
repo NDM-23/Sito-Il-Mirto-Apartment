@@ -95,10 +95,24 @@ class DatabaseSeeder extends Seeder
             'apartment.bedrooms', 'gallery.public', 'gallery.public', 'gallery.public', 'gallery.public',
             'location.map', 'promotions.header',
         ];
+        $sampleGalleryImages = [
+            'images/site/galleria-piscina.svg',
+            'images/site/piscina-estate.svg',
+            'images/site/soggiorno-luminoso.svg',
+            'images/site/cucina-completa.svg',
+            'images/site/camera-accogliente.svg',
+            'images/site/galleria-terrazza.svg',
+            'images/site/galleria-spiaggia.svg',
+            'images/site/galleria-olbia.svg',
+            'images/site/galleria-vista-mare.svg',
+            'images/site/galleria-costa-smeralda.svg',
+            'images/site/spiaggia-pittulongu.svg',
+            'images/site/galleria-tramonto.svg',
+        ];
+
         for ($i = 0; $i < 12; $i++) {
-            $path = 'https://picsum.photos/seed/mirto'.$i.'/1600/1000';
             GalleryImage::query()->create([
-                'path' => $path,
+                'path' => $sampleGalleryImages[$i],
                 'section_key' => $sections[$i] ?? 'gallery.public',
                 'alt' => [
                     'it' => 'Appartamento Il Mirto — foto '.($i + 1),

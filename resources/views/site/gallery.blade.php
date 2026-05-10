@@ -22,18 +22,18 @@
     {{-- Gallery grid --}}
     @php
         $galleryItems = $images->isNotEmpty() ? $images : collect([
-            (object)['path'=>'https://picsum.photos/seed/mirto-pool-main/800/600','alt'=>['it'=>'Piscina Il Mirto Apartment']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-living-main/800/600','alt'=>['it'=>'Soggiorno']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-bedroom-1/800/600','alt'=>['it'=>'Camera da letto principale']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-kitchen-main/800/600','alt'=>['it'=>'Cucina completa']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-bathroom-1/800/600','alt'=>['it'=>'Bagno']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-terrace/800/600','alt'=>['it'=>'Terrazza/esterno']],
-            (object)['path'=>'https://picsum.photos/seed/pittulongu-sardinia/800/600','alt'=>['it'=>'Spiaggia Pittulongu']],
-            (object)['path'=>'https://picsum.photos/seed/olbia-sardinia-coast/800/600','alt'=>['it'=>'Costa di Olbia']],
-            (object)['path'=>'https://picsum.photos/seed/sardinia-sea-view/800/600','alt'=>['it'=>'Vista mare Sardegna']],
-            (object)['path'=>'https://picsum.photos/seed/costa-smeralda-view/800/600','alt'=>['it'=>'Costa Smeralda']],
-            (object)['path'=>'https://picsum.photos/seed/mirto-pool-evening/800/600','alt'=>['it'=>'Piscina al tramonto']],
-            (object)['path'=>'https://picsum.photos/seed/sardinia-sunset/800/600','alt'=>['it'=>'Tramonto Sardegna']],
+            (object)['path'=>'images/site/galleria-piscina.svg','alt'=>['it'=>'Piscina Il Mirto Apartment']],
+            (object)['path'=>'images/site/galleria-soggiorno.svg','alt'=>['it'=>'Soggiorno']],
+            (object)['path'=>'images/site/galleria-camera.svg','alt'=>['it'=>'Camera da letto principale']],
+            (object)['path'=>'images/site/galleria-cucina.svg','alt'=>['it'=>'Cucina completa']],
+            (object)['path'=>'images/site/galleria-bagno.svg','alt'=>['it'=>'Bagno']],
+            (object)['path'=>'images/site/galleria-terrazza.svg','alt'=>['it'=>'Terrazza/esterno']],
+            (object)['path'=>'images/site/spiaggia-pittulongu.svg','alt'=>['it'=>'Spiaggia Pittulongu']],
+            (object)['path'=>'images/site/galleria-olbia.svg','alt'=>['it'=>'Costa di Olbia']],
+            (object)['path'=>'images/site/galleria-vista-mare.svg','alt'=>['it'=>'Vista mare Sardegna']],
+            (object)['path'=>'images/site/galleria-costa-smeralda.svg','alt'=>['it'=>'Costa Smeralda']],
+            (object)['path'=>'images/site/galleria-piscina-sera.svg','alt'=>['it'=>'Piscina al tramonto']],
+            (object)['path'=>'images/site/galleria-tramonto.svg','alt'=>['it'=>'Tramonto Sardegna']],
         ]);
     @endphp
 

@@ -60,7 +60,7 @@
 
         <div class="fade-in">
             <div class="relative">
-                <img src="https://picsum.photos/seed/mirto-apartment-main/800/600"
+                <img src="{{ asset('images/site/appartamento-main.svg') }}"
                      alt="Il Mirto Apartment soggiorno principale"
                      class="w-full rounded-3xl object-cover shadow-2xl"
                      style="height:460px;object-position:center;"
@@ -123,7 +123,7 @@
                     </ul>
                 </div>
                 <div class="order-1 lg:order-2 overflow-hidden rounded-2xl shadow-xl">
-                    <img src="https://picsum.photos/seed/sardinia-bedroom-white/800/600"
+                    <img src="{{ asset('images/site/appartamento-camera.svg') }}"
                          alt="Camera da letto Il Mirto Apartment"
                          class="w-full object-cover" style="height:340px;" loading="lazy">
                 </div>
@@ -132,7 +132,7 @@
             {{-- Cucina --}}
             <div class="grid gap-8 lg:grid-cols-2 lg:items-center fade-in">
                 <div class="overflow-hidden rounded-2xl shadow-xl">
-                    <img src="https://picsum.photos/seed/modern-kitchen-bright/800/600"
+                    <img src="{{ asset('images/site/appartamento-cucina.svg') }}"
                          alt="Cucina Il Mirto Apartment"
                          class="w-full object-cover" style="height:340px;" loading="lazy">
                 </div>
@@ -177,7 +177,7 @@
                 </a>
             </div>
             <div class="hidden lg:block">
-                <img src="https://picsum.photos/seed/mirto-pool-sunset/800/600"
+                <img src="{{ asset('images/site/appartamento-piscina-tramonto.svg') }}"
                      alt="Piscina Il Mirto Apartment Olbia"
                      class="h-full w-full object-cover" style="min-height:350px;"
                      loading="lazy">

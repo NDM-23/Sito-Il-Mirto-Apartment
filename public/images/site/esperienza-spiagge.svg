@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Spiagge da sogno</title>
+  <desc id="desc">Immagine campione locale modificabile in public/images/site/esperienza-spiagge.svg</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fb5c3"/><stop offset="1" stop-color="#91d7dc"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="600" height="500" fill="url(#bg)"/>
+  <circle cx="491" cy="100" r="90" fill="#f6d58d" opacity=".28"/>
+  <path d="M0 360 C 120 310, 192 410, 300 350 S 480 290, 600 340 L 600 500 L 0 500 Z" fill="#f6d58d" opacity=".35"/>
+  <path d="M0 410 C 150 380, 258 460, 390 405 S 528 370, 600 415 L 600 500 L 0 500 Z" fill="#fff" opacity=".22"/>
+  <g filter="url(#shadow)">
+    <rect x="48" y="90" width="336" height="160" rx="28" fill="#ffffff" opacity=".86"/>
+    <text x="72" y="160" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700" fill="#1a4971">Spiagge da sogno</text>
+    <text x="72" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2" fill="#1f5c4b" opacity=".86">ACQUA CRISTALLINA</text>
+  </g>
+  <text x="564" y="472" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#fff" opacity=".72">Sostituisci questa immagine</text>
+</svg>

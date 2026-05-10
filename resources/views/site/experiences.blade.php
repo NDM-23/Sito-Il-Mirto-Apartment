@@ -6,7 +6,7 @@
 
 {{-- Mini-hero --}}
 <div class="relative overflow-hidden pt-20" style="background:linear-gradient(135deg,#2fb5c3 0%,#1f5c4b 100%);min-height:320px;">
-    <img src="https://picsum.photos/seed/sardinia-coast-aerial/1920/600"
+    <img src="{{ asset('images/site/esperienze-hero.svg') }}"
          alt="Sardegna costa"
          class="absolute inset-0 h-full w-full object-cover opacity-30"
          loading="eager">
@@ -39,42 +39,42 @@
         <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             @foreach([
                 [
-                    'img' => 'pittulongu-beach-sardinia',
+                    'img' => 'images/site/spiaggia-pittulongu.svg',
                     'name' => 'Pittulongu (La Playa)',
                     'dist' => '12–15 min in auto',
                     'text' => 'La spiaggia preferita dagli Olbiesi. Sabbia bianca finissima, acque turchesi, vista spettacolare sull\'isola di Tavolara. Bar, lettini, parcheggio. Raggiungibile anche in bus.',
                     'tag' => '🏖️ Sabbia finissima',
                 ],
                 [
-                    'img' => 'porto-istana-sardinia',
+                    'img' => 'images/site/spiaggia-porto-istana.svg',
                     'name' => 'Porto Istana',
                     'dist' => '18 min in auto',
                     'text' => 'Quattro spiagge separate, acque bassissime ideali per i bambini, fondale attrezzato per lo snorkeling. La più bella di Olbia secondo molti. Prenotare ombrelloni in alta stagione.',
                     'tag' => '🐠 Snorkeling',
                 ],
                 [
-                    'img' => 'bados-beach-olbia',
+                    'img' => 'images/site/spiaggia-bados.svg',
                     'name' => 'Bados & Spiaggia Bianca',
                     'dist' => '15 min in auto',
                     'text' => 'Calette protette con sabbia bianchissima e acqua trasparente. Meno affollata di Pittulongu, perfetta per chi cerca tranquillità. Possibilità di snorkeling nelle calette rocciose.',
                     'tag' => '🤿 Calette riservate',
                 ],
                 [
-                    'img' => 'cala-brandinchi-sardinia',
+                    'img' => 'images/site/spiaggia-cala-brandinchi.svg',
                     'name' => 'Cala Brandinchi (Tahiti Sarda)',
                     'dist' => '35 min verso San Teodoro',
                     'text' => 'Una delle spiagge più fotografate del mondo. Acque verde-smeraldo, sabbia bianca lunghissima. Vale ogni chilometro. Arriva presto in alta stagione per trovare posto.',
                     'tag' => '📸 Spettacolare',
                 ],
                 [
-                    'img' => 'romazzino-costa-smeralda',
+                    'img' => 'images/site/spiaggia-costa-smeralda.svg',
                     'name' => 'Costa Smeralda',
                     'dist' => '30–40 min',
                     'text' => 'Capriccioli, Romazzino, Piccolo Pevero — le spiagge iconiche della Costa Smeralda. Acqua impossibilmente blu, rocce di granito rosa. L\'esperienza Sardegna per eccellenza.',
                     'tag' => '💎 Iconica',
                 ],
                 [
-                    'img' => 'isola-tavolara-olbia',
+                    'img' => 'images/site/spiaggia-tavolara.svg',
                     'name' => 'Isola Tavolara',
                     'dist' => 'Gita in barca da Porto San Paolo',
                     'text' => 'Un gigante di calcare che emerge dal mare. Riserva naturale, acque incontaminate, la spiaggia più piccola del "regno" più piccolo del mondo. Escursione indimenticabile.',
@@ -83,7 +83,7 @@
             ] as $beach)
             <div class="group overflow-hidden rounded-2xl bg-white shadow-md card-hover">
                 <div class="overflow-hidden h-48">
-                    <img src="https://picsum.photos/seed/{{ $beach['img'] }}/600/400"
+                    <img src="{{ asset($beach['img']) }}"
                          alt="{{ $beach['name'] }}"
                          class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                          loading="lazy">
@@ -105,7 +105,7 @@
     <section class="mb-20 fade-in rounded-3xl overflow-hidden shadow-2xl">
         <div class="grid lg:grid-cols-2">
             <div class="relative h-64 lg:h-auto">
-                <img src="https://picsum.photos/seed/maddalena-boat-trip/800/600"
+                <img src="{{ asset('images/site/esperienza-barca.svg') }}"
                      alt="Arcipelago di La Maddalena gita in barca"
                      class="absolute inset-0 h-full w-full object-cover"
                      loading="lazy">

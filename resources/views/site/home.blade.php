@@ -7,7 +7,7 @@
 {{-- ===== HERO CINEMATOGRAFICO ===== --}}
 <section class="relative overflow-hidden" style="min-height:100vh;">
     {{-- Background image --}}
-    <img src="https://picsum.photos/seed/sardinia-coast-pool/1920/1080"
+    <img src="{{ asset('images/site/hero-piscina-sardegna.svg') }}"
          alt="Il Mirto Apartment piscina Olbia Sardegna"
          class="absolute inset-0 h-full w-full object-cover object-center"
          loading="eager" fetchpriority="high">
@@ -107,7 +107,7 @@
         <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div class="fade-in">
                 <div class="relative">
-                    <img src="https://picsum.photos/seed/swimming-pool-luxury/800/600"
+                    <img src="{{ asset('images/site/piscina-estate.svg') }}"
                          alt="Piscina Il Mirto Apartment Olbia"
                          class="w-full rounded-3xl object-cover shadow-2xl"
                          style="height:440px;object-position:center;">
@@ -165,13 +165,13 @@
 
         <div class="mt-14 grid gap-6 md:grid-cols-3">
             @foreach([
-                ['img'=>'modern-living-room-italy', 'title'=>'Soggiorno luminoso', 'text'=>'Zona relax spaziosa con divano, TV e zona pranzo. Luce naturale tutto il giorno.'],
-                ['img'=>'modern-bedroom-sardinia', 'title'=>'Camere accoglienti', 'text'=>'Letti comodi, armadi capienti, biancheria inclusa. Il riposo che meriti dopo le avventure in mare.'],
-                ['img'=>'modern-kitchen-apartment', 'title'=>'Cucina completa', 'text'=>'Piano cottura, forno, frigorifero grande, lavastoviglie. Cucina Sarda? Tutto a portata di mano.'],
+                ['img'=>'images/site/soggiorno-luminoso.svg', 'title'=>'Soggiorno luminoso', 'text'=>'Zona relax spaziosa con divano, TV e zona pranzo. Luce naturale tutto il giorno.'],
+                ['img'=>'images/site/camera-accogliente.svg', 'title'=>'Camere accoglienti', 'text'=>'Letti comodi, armadi capienti, biancheria inclusa. Il riposo che meriti dopo le avventure in mare.'],
+                ['img'=>'images/site/cucina-completa.svg', 'title'=>'Cucina completa', 'text'=>'Piano cottura, forno, frigorifero grande, lavastoviglie. Cucina Sarda? Tutto a portata di mano.'],
             ] as $feature)
             <div class="group overflow-hidden rounded-2xl bg-sabbia shadow-md card-hover fade-in">
                 <div class="overflow-hidden h-52">
-                    <img src="https://picsum.photos/seed/{{ $feature['img'] }}/600/400"
+                    <img src="{{ asset($feature['img']) }}"
                          alt="{{ $feature['title'] }}"
                          class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                          loading="lazy">
@@ -287,16 +287,16 @@
         {{-- Placeholder gallery --}}
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
             @foreach([
-                ['seed'=>'apartment-pool-view', 'span'=>true],
-                ['seed'=>'apartment-bedroom-sardinia', 'span'=>false],
-                ['seed'=>'apartment-living-room', 'span'=>false],
-                ['seed'=>'sardinia-beach-view', 'span'=>false],
-                ['seed'=>'apartment-kitchen-modern', 'span'=>false],
-                ['seed'=>'olbia-sunset', 'span'=>false],
+                ['seed'=>'images/site/galleria-piscina.svg', 'span'=>true],
+                ['seed'=>'images/site/galleria-camera.svg', 'span'=>false],
+                ['seed'=>'images/site/galleria-soggiorno.svg', 'span'=>false],
+                ['seed'=>'images/site/galleria-spiaggia.svg', 'span'=>false],
+                ['seed'=>'images/site/galleria-cucina.svg', 'span'=>false],
+                ['seed'=>'images/site/galleria-tramonto.svg', 'span'=>false],
             ] as $ph)
             <a href="{{ route('gallery') }}"
                class="group block overflow-hidden rounded-xl shadow-md {{ $ph['span'] ? 'md:col-span-2 md:row-span-2' : '' }}">
-                <img src="https://picsum.photos/seed/{{ $ph['seed'] }}/600/500"
+                <img src="{{ asset($ph['seed']) }}"
                      alt="Il Mirto Apartment Olbia"
                      class="w-full object-cover transition duration-500 group-hover:scale-105 {{ $ph['span'] ? 'h-48 md:h-full min-h-[300px]' : 'h-40 md:h-44' }}"
                      loading="lazy">
@@ -489,12 +489,12 @@
 
         <div class="grid gap-4 md:grid-cols-3">
             @foreach([
-                ['img'=>'sardinia-beach-crystal-water', 'title'=>'Spiagge da sogno', 'text'=>'Pittulongu, Porto Istana, le calette della Costa Smeralda — sabbia bianca e mare cristallino a pochi minuti.', 'tag'=>'Natura'],
-                ['img'=>'boat-trip-mediterranean', 'title'=>'Gite in barca', 'text'=>'Esplora l\'Arcipelago di La Maddalena, approda a Spargi o Budelli. Il mare più bello del Mediterraneo.', 'tag'=>'Avventura'],
-                ['img'=>'sardinian-restaurant-dinner', 'title'=>'Cucina Sarda', 'text'=>'Culurgiones, porceddu, bottarga di muggine, vini Vermentino. Olbia ha ristoranti autentici a 5 minuti.', 'tag'=>'Gusto'],
+                ['img'=>'images/site/esperienza-spiagge.svg', 'title'=>'Spiagge da sogno', 'text'=>'Pittulongu, Porto Istana, le calette della Costa Smeralda — sabbia bianca e mare cristallino a pochi minuti.', 'tag'=>'Natura'],
+                ['img'=>'images/site/esperienza-barca.svg', 'title'=>'Gite in barca', 'text'=>'Esplora l\'Arcipelago di La Maddalena, approda a Spargi o Budelli. Il mare più bello del Mediterraneo.', 'tag'=>'Avventura'],
+                ['img'=>'images/site/esperienza-cucina.svg', 'title'=>'Cucina Sarda', 'text'=>'Culurgiones, porceddu, bottarga di muggine, vini Vermentino. Olbia ha ristoranti autentici a 5 minuti.', 'tag'=>'Gusto'],
             ] as $exp)
             <div class="group relative overflow-hidden rounded-2xl shadow-md card-hover fade-in" style="height:360px;">
-                <img src="https://picsum.photos/seed/{{ $exp['img'] }}/600/500"
+                <img src="{{ asset($exp['img']) }}"
                      alt="{{ $exp['title'] }}"
                      class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
                      loading="lazy">
