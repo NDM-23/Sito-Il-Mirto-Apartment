@@ -17,7 +17,7 @@ class GalleryImage extends Model
         ];
     }
 
-    /** URL pubblica (storage locale o URL esterno da seed) */
+    /** URL pubblica (file locale del sito, storage locale o eventuale URL esterno legacy). */
     public function url(): string
     {
         if (str_starts_with($this->path, 'http://') || str_starts_with($this->path, 'https://')) {
